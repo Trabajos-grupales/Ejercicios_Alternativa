@@ -1,0 +1,17 @@
+@startuml
+Algoritmo Clasificación_de_Números
+
+Participante Usuario
+Participante Clasificacion
+
+Usuario -> Clasificacion : clasificarNumeros(a, b)
+
+Clasificacion -> Clasificacion : Calcular a + b
+Clasificacion -> Clasificacion : Calcular a * b
+
+Clasificacion -> Clasificacion : Comparar valores
+Clasificacion -> Clasificacion : Clasificar en orden
+
+Clasificacion --> Usuario : Resultado
+
+@enduml
