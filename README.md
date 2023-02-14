@@ -74,8 +74,8 @@ En principio, el conductor recibirá la prima anual completa si no ha tenido acc
 
 Esta prima es la suma de una prima de distancia y de una prima de antigüedad.
 
-La prima de distancia aumenta un céntimo por kilómetro recorrido durante el año, con un máximo de 400 €.
++ La prima de distancia aumenta un céntimo por kilómetro recorrido durante el año, con un máximo de 400 €.
 
-La prima de antigüedad solo se paga una vez transcurridos cuatro años de antigüedad y es de 200 €. Luego aumenta 20,00 € por año adicional.
++ La prima de antigüedad solo se paga una vez transcurridos cuatro años de antigüedad y es de 200 €. Luego aumenta 20,00 € por año adicional.
 
 Escribir el algoritmo de cálculo de la prima anual que se concederá a cada conductor.
