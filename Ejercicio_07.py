@@ -11,5 +11,5 @@ El coste del trayecto es de 67,30 € por alumno hasta 25 alumnos y de 61,00 €
 
 Establecer el algoritmo de cálculo del precio de coste por alumno y del coste global del viaje en función de la cantidad de alumnos.
 
-Ejercicio 8: Prima anual
+
 '''
