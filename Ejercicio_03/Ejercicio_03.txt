@@ -34,7 +34,7 @@ Realización
 
 Poscondición
     importe < 100  => Resultado = 0
-    100 ≤ importe ≤ 500  => Resueltado = 0,05 x importe
-    importe > 500 => Resultado = 0,08 x importe
+    100 ≤ importe ≤ 500  ≥ Resueltado = 0,05 x importe
+    importe > 500 ≥ Resultado = 0,08 x importe
 
 fin Descuento
