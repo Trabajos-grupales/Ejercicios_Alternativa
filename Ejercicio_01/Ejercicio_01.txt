@@ -1,0 +1,37 @@
+Pseudocódigo
+
+
+tipo DIA
+    # estructura
+    # LUNES = 0
+    # MARTES = 1
+    # MIERCOLES = 2
+    # JUEVES = 3
+    # VIERNES = 4
+    # SABADO = 5
+    # DOMINGO = 6
+
+    n: ENTERO
+
+CONDICION
+    0 <= n <= 6
+fin DIA
+
+algoritmo sucesor(dia: DIA)
+    #devuelve el día siguiente de la semana
+
+Entrada
+    dia: ENTERO
+RESULTADO
+    dia_siguiente: ENTERO
+
+PRECONDICION
+    0 <= dia <= 6
+
+REALIZACIÓN
+    resultado <- (dia + 1) modulo 7
+
+POSCONDICION
+    resultado = resto(dia + 1, 7)
+
+fin sucesor
