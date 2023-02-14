@@ -1,0 +1,40 @@
+Pseudocodigo
+
+#Ejercicio 3: Descuento
+
+
+
+
+
+#Un comerciante hace un descuento del 5 % en todas las compras con un importe comprendido entre 100 y 500 €, y del 8 % en los importes superiores.
+
+#Escribir el algoritmo de cálculo del importe del descuento en una compra dada.
+
+Algoritmo Descuento
+    #Cálcula el porcentaje de descuento que hace un comerciante según el importe de la compra
+
+Entrada
+    importe: ENTERO
+    #importe de la compra
+
+Resultado: ENTERO
+
+Condición
+    importe > 100
+
+    si importe < 100 => Resultado = 0
+
+Realización
+    si 100 ≤ importe ≤ 500 entonces
+        Resultado <- 0,05 x importe  #descuento del 5%
+
+    si no    # entonces importe > 500
+        Resultado <- 0,08 x importe #descuento del 8%
+    fin si
+
+Poscondición
+    importe < 100  => Resultado = 0
+    100 ≤ importe ≤ 500  ≥ Resueltado = 0,05 x importe
+    importe > 500 ≥ Resultado = 0,08 x importe
+
+fin Descuento

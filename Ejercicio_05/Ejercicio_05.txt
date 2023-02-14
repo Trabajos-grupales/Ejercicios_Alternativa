@@ -1,0 +1,43 @@
+Pseudocódigo
+
+#Ejercicio 5: Con ADIF puedes
+
+
+#ADIF hace descuento a las familias que van al Parque Warner Madrid en función de la cantidad de niños que hay en la familia.
+#Este descuento es del 10 % para 2 niños, 15 % para 3 niños y 18 % para 4 niños. A partir de 5 niños, el descuento es del 18 %, pero aumenta un 1 % por cada niño por encima de 4.
+
+#Establecer el algoritmo que calcula el importe del descuento al que tendrá derecho una familia dada.
+
+
+Algoritmo Importe_descuento
+    #calcula
+
+Entrada
+    número_niños: ENTERO
+    precio_entrada: REAL
+
+Resultado: REAL   #importe del descuento
+
+Condición
+    número_niños > 1
+    si número_niños ≤ 1 => Resultado = 0
+
+Realización
+    si núnmero_niños = 2 entonces
+        Resultadon <- 0,10 x precio_entrada  # 10% de descuento si tienen 2 niños
+    si no si número_niños = 3 entonces
+        Resultado <- 0,15 x precio_entrada # 15% descuento si tienen 3 número_niños
+    si no si número_niños = 4 entonces
+        Resultado <- 0,18 x precio_entrada # 18% descuento si tienen 4 niños
+    si no    # número_niños ≥ 5
+        Resultado <- precio_entrada x (0,18 + (0,1 x (número_niños - 4)))  # 18% descuento y aumento un 1% por cada niño por encima de 4
+    fin si
+
+Poscondición
+    número_niños ≤ 1 => Resultado = 0
+    número_niños = 2 => Resultado = precio_entrada x 0,10
+    número_niños = 3 => Resultado = precio_entrada x 0,15
+    número_niños = 4 => Resultado = precio_entdada x 0,18
+    número_niños ≥ 5 => Resultado = precio_entrada x (0,18 + (0,1 + (número_niños - 4)))
+
+fin Importe_descuento
