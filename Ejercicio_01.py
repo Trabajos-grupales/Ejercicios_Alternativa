@@ -23,3 +23,6 @@ def sucesor(dia_actual):
         siguiente = next(ciclo)
     return next(ciclo)
 
+if __name__ == '__main__':
+    dia_actual = DIA.LUNES
+    print('El dia de la semana siguiente a {} es {}'.format(dia_actual.name, sucesor(dia_actual).name))
