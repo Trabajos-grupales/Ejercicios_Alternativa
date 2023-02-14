@@ -27,23 +27,26 @@ Realización
 
     #transporte
     si número_alumnos ≤ 25 entonces
-        Resultado_transporte <- coste_alumno = 67,30  coste_global = 67,30 x número_alumnos
+        Resultado_transporte <- coste_alumno.t = 67,30  coste_global.t = 67,30 x número_alumnos
     si no si número_alumnos > 25 entonces
-        Resultado_transporte <- coste_alumno = 61,00  coste_global = 61,00 x número_alumnos
+        Resultado_transporte <- coste_alumno.t = 61,00  coste_global.t = 61,00 x número_alumnos
 
     #alojamiento
     si número_alumnos ≤ 30 entonces
-        Resultado_alojamiento <- coste alumnos = 4,75 x número_días  coste global = 4,74 x número_dias x número_alumnos
+        Resultado_alojamiento <- coste alumnos.a = 4,75 x número_días  coste global.a = 4,74 x número_dias x número_alumnos
     si no si 31 < número_alumos < 35 entonces
-        Resultado_alojamienti <- coste alumnos = 4 x número_días  coste_global = 4 x número_días x número_alumnos
+        Resultado_alojamienti <- coste alumnos.a = 4 x número_días  coste_global.a = 4 x número_días x número_alumnos
     si no   # número_alumnos ≥ 35
-        Resultado alojamiento <- coste alumnos = 3,5 x número_días  coste_global = 3,5 x número_días x número_alumnos
+        Resultado alojamiento <- coste alumnos.a = 3,5 x número_días  coste_global.a = 3,5 x número_días x número_alumnos
 
     # comida
-    Resultado_comida <- coste alumnos = 3,5 x número_dias  coste_global = 3,5 x número_dias x número alumnos
+    Resultado_comida <- coste alumnos.c = 3,5 x número_dias  coste_global.c = 3,5 x número_dias x número alumnos
 
 
+    RESULTADO => coste_alumano = coste_alumnos.t +  coste_alumnos.a + coste_alumnos.cada
+                coste_global = coste_global.t + coste_alumnos.a + coste_alumnos.cada
 
+fin Viaje_escolar
 
 
 
