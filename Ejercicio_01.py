@@ -16,5 +16,10 @@ from enum import Enum #vincular el conjunto de miembros a valore
 
 DIA = Enum('DIA', ['LUNES', 'MARTES', 'MIERCOLES', 'JUEVES', 'VIERNES', 'SABADO', 'DOMINGO'])
 
-
+def sucesor(dia_actual):
+    ciclo = itertools.cycle(DIA)
+    siguiente = next(ciclo)
+    while siguiente != dia_actual:
+        siguiente = next(ciclo)
+    return next(ciclo)
 
