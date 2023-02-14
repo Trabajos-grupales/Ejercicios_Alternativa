@@ -4,6 +4,11 @@ Entrada:
     Notas: Entero # Hay 4 notas
     Media: Entero
 
+Resultados:
+    Alumno con talento: Entero
+    Alumno con capacidad: Entero
+    Debe reorientarse: Entero
+
 Precondición:
     0 <= Notas <= 20
 
