@@ -1,0 +1,34 @@
+@startuml
+Algoritmo Prima Anual
+
+Constantes
+    define TASA_PRIMA_DISTANCIA 0.01
+    define MAX_PRIMA_DISTANCIA 400
+
+Entradas
+    accidentes: int(positivo)
+    distancia: int(positiva)
+    antiguedad: int(positiva)
+
+
+Variables
+    prima_antiguedad: real
+    prima_distancia: real
+    resultado: real
+Realización:
+#Calcular la prima de antiguedad
+    if (antiguedad < 4) then
+        prima_antiguedad = 0.00
+    else
+        prima_antiguedad = 200.00 + REAL(antiguedad - 4) * 20.00
+    endif
+#Calcular la prima de distancia
+    prima_distancia = MIN(REAL(distancia) * TASA_PRIMA_DISTANCIA, MAX_PRIMA_DISTANCIA)
+
+#Calcular la prima anual total
+    resultado = (prima_antiguedad + prima_distancia) / REAL(accidentes + 1)
+
+Resultado
+    La prima anual es: resultado
+
+@enduml

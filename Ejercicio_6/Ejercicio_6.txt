@@ -1,0 +1,77 @@
+@startuml
+Algoritmo Descuentos
+
+Entrada
+    Descuento: Entero //Descuento a aplicar
+    Precio: Real //Precio del producto
+    Productos: Entero //Cantidad de productos
+
+Resultado: Real //Precio final del producto
+
+Precondición
+    Productos > 0
+    Descuento >= 0
+    Precio >= 0
+    COMMAQ = -2 //Porcentaje de descuento a aplicar
+    BEL = +1 //Porcentaje de descuento a aplicar
+
+Inicio
+    PrecioFinal = Precio - (Precio * Descuento / 100)
+    Escribir "El precio final es: ", PrecioFinal
+
+Fin
+
+Variables
+    Descuento: Entero //Descuento a aplicar
+    Precio: Real //Precio del producto
+    PrecioFinal: Real //Precio final del producto
+    COMMAQ: Entero //Descuernto a aplicar
+    BEL: Entero //Descuento a aplicar
+
+Realización
+    si COMMAQ
+        entonces
+            si productos < 10000
+                entonces
+                    Descuento = 0
+            sino 10000 =< productos =< 20000
+                entonces
+                    Descuento = 8
+            sino 20000 < productos < 40000
+                entonces
+                    Descuento = 13
+            sino 40000 < productos
+                entonces
+                    Descuento = 18
+    sino BEL
+        entonces
+            si productos < 10000
+                entonces
+                    Descuento = 0
+            sino 10000 =< productos =< 20000
+                entonces
+                    Descuento = 11
+            sino 20000 < productos < 40000
+                entonces
+                    Descuento = 16
+            sino 40000 < productos
+                entonces
+                    Descuento = 21
+    sino
+        productos < 10000
+            entonces
+                Descuento = 0
+        10000 =< productos =< 20000
+            entonces
+                Descuento = 10
+        20000 < productos < 40000
+            entonces
+                Descuento = 15
+        40000 < productos
+            entonces
+                Descuento = 20
+
+Postcondición
+    PrecioFinal = Precio - (Precio * Descuento / 100)
+
+@enduml
