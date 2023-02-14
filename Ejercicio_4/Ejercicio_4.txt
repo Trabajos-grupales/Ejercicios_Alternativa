@@ -1,0 +1,28 @@
+@startuml
+Algoritmo_Media
+Entrada:
+    Notas: Entero # Hay 4 notas
+    Media: Entero
+
+Precondición:
+    0 <= Notas <= 20
+
+variable:
+    Nota1: Entero
+    Nota2: Entero
+    Nota3: Entero
+    Nota4: Entero
+    Media: (Nota1 + Nota2 + Nota3 + Nota4) / 4
+
+Realización:
+    Si Media > 15
+        Escribir "Alumno con talento"
+    Si No 12 >= Media >= 15
+        Escribir "Alumno con capacidad"
+    Si No Media < 12
+        Escribir "Debe reorientarse"
+    Fin Si
+
+Postcondición:
+    Media >= 0
+@enduml
